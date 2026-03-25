@@ -1,0 +1,44 @@
+.pictranslate-overlay-container {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.pictranslate-overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px 4px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  pointer-events: none;
+  overflow: hidden;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.pictranslate-loading {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #4a90d9;
+  border-radius: 50%;
+  animation: pictranslate-spin 0.8s linear infinite;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+@keyframes pictranslate-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
